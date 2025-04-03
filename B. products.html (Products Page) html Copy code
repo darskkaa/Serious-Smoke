@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serious Smoke | Products</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link active">Products</a></li>
+        <li><a href="hours.html" class="nav-link">Hours</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <h1>Our Products</h1>
+  </section>
+  
+  <!-- Products Content -->
+  <section class="content">
+    <div class="product">
+      <img src="assets/your-product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>Description for product 1.</p>
+    </div>
+    <div class="product">
+      <img src="assets/your-product2.jpg" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>Description for product 2.</p>
+    </div>
+    <!-- Add more products as needed -->
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Serious Smoke. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
