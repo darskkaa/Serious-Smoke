@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serious Smoke | Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="hours.html" class="nav-link">Hours</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <h1>Contact Us</h1>
+  </section>
+  
+  <!-- Contact Content -->
+  <section class="content">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Address: 1 W Magnolia St, Arcadia, FL 34266</p>
+      <p>Phone: <a href="tel:+19412868451">(941) 286-8451</a></p>
+      <p>Email: <a href="mailto:info@serioussmoke.com">info@serioussmoke.com</a></p>
+    </div>
+    <!-- Optionally, you can add a contact form here -->
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Serious Smoke. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
