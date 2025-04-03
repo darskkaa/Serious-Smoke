@@ -28,16 +28,40 @@
   <!-- Products Content -->
   <section class="content">
     <div class="product">
-      <img src="assets/your-product1.jpg" alt="Product 1">
-      <h3>Product 1</h3>
-      <p>Description for product 1.</p>
+      <img src="exteriorlogoserious_smoke_shop.jpg" alt="Serious Smoke Storefront">
+      <h3>Our Storefront</h3>
+      <p>Visit our location in Arcadia, FL.</p>
     </div>
+
     <div class="product">
-      <img src="assets/your-product2.jpg" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>Description for product 2.</p>
+      <img src="vapeserious_smoke_shop.jpg" alt="Vape Products">
+      <h3>Vape Selection</h3>
+      <p>Premium vapes available in store.</p>
     </div>
-    <!-- Add more products as needed -->
+
+    <div class="product">
+      <img src="glassserious_smoke_shop.jpg" alt="Glass Pipes">
+      <h3>Glass Collection</h3>
+      <p>Hand-picked glass pieces for every smoker.</p>
+    </div>
+
+    <div class="product">
+      <img src="glass2serious_smoke_shop.jpg" alt="Glass Pipes 2">
+      <h3>Exclusive Designs</h3>
+      <p>Unique glass pieces for every need.</p>
+    </div>
+
+    <div class="product">
+      <img src="productsserious_smoke_shop.jpg" alt="Various Products">
+      <h3>Our Shelves</h3>
+      <p>Check out our diverse selection.</p>
+    </div>
+
+    <div class="product">
+      <img src="shelvesserious_smoke_shop.jpg" alt="Shelves">
+      <h3>Stocked & Ready</h3>
+      <p>Always fresh inventory.</p>
+    </div>
   </section>
   
   <!-- Footer -->
