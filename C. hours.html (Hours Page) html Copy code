@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serious Smoke | Hours</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="hours.html" class="nav-link active">Hours</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <h1>Store Hours</h1>
+  </section>
+  
+  <!-- Hours Content -->
+  <section class="content">
+    <h2>Our Hours</h2>
+    <p>Mon, Tue, Wed, Thu, Fri, Sat: 10:00 AM - 9:00 PM</p>
+    <p>Sun: 11:00 AM - 7:00 PM</p>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Serious Smoke. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
