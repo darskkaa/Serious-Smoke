@@ -1,322 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serious Smoke | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
 
-/* Import a modern font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="hours.html" class="nav-link">Hours</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="assets/main_logo_serious_smoke.png" alt="Serious Smoke logo" class="hero-logo" />
+      <h1>Serious Smoke</h1>
+      <p>⭐ 5.00 Google Rating | Premium Vape Shop in Arcadia, FL</p>
+      <a href="products.html" class="cta-button">Shop Now</a>
+    </div>
+  </section>
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #121212;
-  color: #f1f1f1;
-  overflow-x: hidden;
-}
+  <!-- About Section -->
+  <section class="scroll-section" id="about">
+    <h2>About Us</h2>
+    <p>At Serious Smoke, we offer a curated selection of vaping products and accessories for the discerning enthusiast.</p>
+    <img src="assets/productsserious_smoke_shop.jpg" alt="Inside Serious Smoke shop" class="about-photo" />
+  </section>
 
-/* Fixed Navigation */
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
-}
+  <!-- Google Maps Location (Bottom of Page) -->
+  <section class="map-section">
+    <h2>Visit Serious Smoke</h2>
+    <p>Come by and see us at our shop in Arcadia, FL!</p>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.153938717128!2d-81.8609427!3d27.2143163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dc973f9c70474b%3A0x48f68dcbe4574d87!2sSerious%20Smoke!5e0!3m2!1sen!2sus!4v1743727752306!5m2!1sen!2sus" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Serious Smoke Location on Google Maps">
+      </iframe>
+    </div>
+    <a 
+      href="https://www.google.com/maps/dir/?api=1&destination=Serious+Smoke,+Arcadia,+FL" 
+      class="directions-button" 
+      target="_blank" 
+      rel="noopener">
+      Get Directions
+    </a>
+  </section>
 
-nav ul {
-  list-style: none;
-  text-align: center;
-  padding: 15px;
-}
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Serious Smoke. All Rights Reserved.</p>
+  </footer>
 
-nav ul li {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #f1f1f1;
-  font-size: 1.1rem;
-  padding: 5px 10px;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  background: #ff5733;
-  border-radius: 5px;
-}
-
-/* Hero Section for Home Page */
-.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000; /* fallback background */
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.hero-logo {
-  max-width: 300px;
-  width: 80%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.hero-content h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  background: #ff5733;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-  background: #e04e2f;
-}
-
-/* Page Hero for Sub-Pages */
-.page-hero {
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url('assets/your-page-hero-image.jpg') no-repeat center center/cover;
-  position: relative;
-}
-
-.page-hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-.page-hero h1 {
-  position: relative;
-  z-index: 2;
-  font-size: 3rem;
-  text-align: center;
-}
-
-/* Content Sections */
-.content {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.content p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-/* Products Grid */
-.product {
-  display: inline-block;
-  width: 300px;
-  margin: 20px;
-  background: #1e1e1e;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  vertical-align: top;
-}
-
-.product img {
-  width: 100%;
-  height: auto;
-}
-
-.product h3 {
-  font-size: 1.5rem;
-  margin: 15px 0 10px;
-}
-
-.product p {
-  font-size: 1rem;
-  padding: 0 15px 15px;
-}
-
-/* Scroll Effects */
-.scroll-section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  padding: 60px 20px;
-}
-
-.scroll-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Footer */
-footer {
-  background: #000;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-}
-
-/* Google Map Section */
-.map-section {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #1a1a1a;
-}
-
-.map-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.map-section p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
-.map-container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto 30px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 450px;
-  border: none;
-  display: block;
-}
-
-/* Get Directions Button */
-.directions-button {
-  display: inline-block;
-  background: #ff5733;
-  color: white;
-  padding: 12px 25px;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.directions-button:hover {
-  background: #e04e2f;
-}
-
-/* Age Gate Overlay */
-#age-gate {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(18, 18, 18, 0.95);
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(6px);
-}
-
-.age-gate-content {
-  text-align: center;
-  background: #1e1e1e;
-  padding: 40px 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
-  color: #f1f1f1;
-  max-width: 400px;
-  width: 90%;
-}
-
-.age-gate-content h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.age-gate-content p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
-.age-gate-content button {
-  padding: 12px 24px;
-  margin: 10px;
-  font-size: 1rem;
-  background-color: #ff5733;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.age-gate-content button:hover {
-  background-color: #e04e2f;
-}
-
-/* About Page Image & Logo */
-.about-logo {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-}
-
-.about-photo {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  display: block;
-  margin: 30px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-#about h2 {
-  font-size: 2.8rem;
-}
+</body>
+</html>
