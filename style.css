@@ -12,6 +12,7 @@ body {
   background-color: #121212;
   color: #f1f1f1;
   overflow-x: hidden;
+  padding-top: 80px; /* Prevents content from hiding under fixed header */
 }
 
 /* Fixed Navigation */
@@ -22,15 +23,31 @@ header {
   background: rgba(0, 0, 0, 0.8);
 }
 
-nav ul {
-  list-style: none;
-  text-align: center;
-  padding: 15px;
+/* Navigation Container with persistent logo */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 20px;
+.site-logo img {
+  max-height: 50px; /* Makes the logo small */
+  width: auto;
+  display: block;
+}
+
+/* Nav Links */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
@@ -45,6 +62,24 @@ nav ul li a:hover,
 nav ul li a.active {
   background: #ff5733;
   border-radius: 5px;
+}
+
+/* Mobile Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  .site-logo img {
+    max-height: 40px;
+    margin-bottom: 10px;
+  }
 }
 
 /* Hero Section for Home Page */
@@ -315,4 +350,8 @@ footer {
   margin: 30px auto;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#about h2 {
+  font-size: 2.8rem;
 }
