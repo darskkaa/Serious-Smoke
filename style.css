@@ -246,6 +246,7 @@ footer {
 .directions-button:hover {
   background: #e04e2f;
 }
+
 /* Age Gate Overlay */
 #age-gate {
   position: fixed;
@@ -298,3 +299,20 @@ footer {
   background-color: #e04e2f;
 }
 
+/* About Page Image & Logo */
+.about-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
